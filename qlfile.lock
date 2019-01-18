@@ -1,0 +1,11 @@
+("quicklisp" .
+ (:class qlot.source.ql:source-ql-all
+  :initargs (:distribution "http://beta.quicklisp.org/dist/quicklisp.txt" :%version :latest)
+  :version "2019-01-07"))
+("woo" .
+ (:class qlot.source.github:source-github
+  :initargs (:project-name "woo" :repos "fukamachi/woo" :ref "52bf0ede5c2798cb170e0c298e834ee67d79c3d8" :branch nil :tag nil)
+  :version "github-52bf0ede5c2798cb170e0c298e834ee67d79c3d8"
+  :repos "fukamachi/woo"
+  :url "https://github.com/fukamachi/woo/archive/52bf0ede5c2798cb170e0c298e834ee67d79c3d8.tar.gz"
+  :ref "52bf0ede5c2798cb170e0c298e834ee67d79c3d8"))
