@@ -3,7 +3,7 @@ A test to check cffi-grovel is loaded automatically when you do
 
 Seems, that this commit has broken everything:
 
-https://github.com/fukamachi/woo/commit/648f1cbdaff0ff8b47b7c6c936349ccb8bf40fac
+https://github.com/fukamachi/woo/commit/52bf0ede5c2798cb170e0c298e834ee67d79c3d8
 
 because before it everything has worked fine.
 
