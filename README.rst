@@ -1,11 +1,10 @@
 A test to check cffi-grovel is loaded automatically when you do
 ``qlot install`` and your project have dependency from Woo.
 
-Seems, that this commit has broken everything:
-
-https://github.com/fukamachi/woo/commit/52bf0ede5c2798cb170e0c298e834ee67d79c3d8
-
-because before it everything has worked fine.
+Seems, that this commit has broken everything: `52bf0ede5c2798cb170e0c298e834ee67d79c3d8`_
+because before it everything has worked fine. Probably, because where
+was ``(ql:quickload :cffi-grovel)`` in the ``woo.asd`` file and it was
+removed in the abovementioned commit.
 
 To run a check
 ==============
@@ -42,3 +41,5 @@ It should fail with this error::
   18: (ASDF/FIND-COMPONENT:RESOLVE-DEPENDENCY-NAME NIL "cffi-grovel" NIL)
   19: ((LAMBDA NIL :IN ASDF/PARSE-DEFSYSTEM:REGISTER-SYSTEM-DEFINITION))
   ...
+
+.. _52bf0ede5c2798cb170e0c298e834ee67d79c3d8: https://github.com/fukamachi/woo/commit/52bf0ede5c2798cb170e0c298e834ee67d79c3d8
