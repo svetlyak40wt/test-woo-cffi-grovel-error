@@ -1,2 +1,2 @@
-(defsystem "test-woo"
+(defsystem "test"
   :depends-on ("woo"))
