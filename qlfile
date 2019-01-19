@@ -1,1 +1,3 @@
+ql :all :latest
+
 github woo fukamachi/woo :ref 52bf0ede5c2798cb170e0c298e834ee67d79c3d8
